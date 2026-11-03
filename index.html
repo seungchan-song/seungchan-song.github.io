@@ -4,533 +4,400 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>송승찬 · 정보보호 포트폴리오</title>
-  <meta name="description" content="정보보호 전공 송승찬의 포트폴리오. 먼저 뚫어 보고, 숫자로 증명하고, 어디부터 막을지 가려냅니다. RAG 개인정보 유출 진단 CLI RAG-DIAG, 특허 출원, 빡공팟 Elite 3.">
+  <meta name="description" content="정보보호 전공 송승찬의 포트폴리오. RAG-DIAG(특허 출원, 캡스톤 장려상), 교육용 쇼핑몰 모의침투, UBC 블록체인 해커톤 3등, 보이스피싱 레이더, 빡공팟 시스템 해킹 Elite Top 3.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    document.documentElement.classList.add('js');
-    function noimg(i){var f=i.closest('figure'),s=f&&f.parentElement;if(f)f.remove();if(s&&s.classList.contains('shots')&&!s.querySelector('figure'))s.remove();}
-  </script>
+  <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
 
-<!-- nav -->
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top"><span lang="ko">송승찬</span><span lang="en">Seungchan Song</span><b>.</b></a>
     <nav class="nav-links" aria-label="Sections">
-      <a href="#about"><span lang="ko">소개</span><span lang="en">About</span></a>
-      <a href="#project"><span lang="ko">프로젝트</span><span lang="en">Project</span></a>
-      <a href="#work"><span lang="ko">활동</span><span lang="en">Work</span></a>
-      <a href="#skills"><span lang="ko">기술</span><span lang="en">Skills</span></a>
-      <a href="#profile"><span lang="ko">연혁</span><span lang="en">Timeline</span></a>
-      <a href="#contact"><span lang="ko">연락</span><span lang="en">Contact</span></a>
+      <a href="#top"><span lang="ko">소개</span><span lang="en">About</span></a>
+      <a href="#projects"><span lang="ko">프로젝트</span><span lang="en">Projects</span></a>
+      <a href="#history"><span lang="ko">연혁</span><span lang="en">Timeline</span></a>
     </nav>
     <div class="nav-tools">
       <div class="lang" role="group" aria-label="Language">
         <button type="button" data-set-lang="ko" aria-pressed="true">KO</button>
         <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
       </div>
-      <a class="btn primary" href="downloads/SeungchanSong_Portfolio_KO.pdf" data-pdf download><span lang="ko">PDF</span><span lang="en">PDF</span></a>
+      <a class="btn primary" href="downloads/SeungchanSong_Portfolio_KO.pdf" data-pdf download>PDF</a>
     </div>
   </div>
 </header>
 
-<main id="top">
+<main>
 
-<!-- hero -->
-<section class="hero">
+<!-- ───────── 1. profile ───────── -->
+<section class="sheet cover" id="top">
   <div class="wrap">
-    <div class="hero-grid">
+    <div class="cover-head">
       <div>
-        <p class="eyebrow">Information Security</p>
+        <p class="eyebrow">Information Security · Portfolio</p>
         <h1><span lang="ko">송승찬</span><span lang="en">Seungchan Song</span></h1>
-        <p class="tagline">
-          <span lang="ko">먼저 뚫어 보고,<br><em>숫자</em>로 증명하고,<br>어디부터 막을지 가려냅니다.</span>
-          <span lang="en">Attack it first.<br>Prove the risk <em>in numbers</em>.<br>Work out what to fix first.</span>
+        <p class="intro">
+          <span lang="ko">공격자의 방식으로 검증하고,<br>법과 데이터로 위험을 설명합니다.</span>
+          <span lang="en">I test systems the way attackers do,<br>and explain the risk with law and data.</span>
         </p>
-        <p class="sub">
-          <span lang="ko">시스템 해킹으로 공격자의 방식을 익히고, AI(RAG) 서비스에서 개인정보가 어디서 얼마나 새는지 재현하고 측정하는 진단 도구 RAG-DIAG를 만들었습니다. 개인정보 보호와 보안 서비스·전략을 감이 아닌 근거와 수치로 기획하는 일을 하고 싶습니다.</span>
-          <span lang="en">I learned how attackers think through system hacking, then built RAG-DIAG, a tool that reproduces and measures where and how much personal data leaks from AI (RAG) services. I want to plan privacy protection and security services and strategy on evidence and numbers, not on intuition.</span>
-        </p>
+        <p class="sub" lang="ko">AI 챗봇의 개인정보 유출을 진단하는 도구 RAG-DIAG를 만들어 특허로 출원했고, 시스템 해킹과 웹 모의침투를 실습하며 공격과 대응을 함께 익혔습니다. 찾은 취약점은 재현 과정과 대응방안까지 문서로 남깁니다.</p>
+        <p class="sub" lang="en">I built RAG-DIAG, a tool that diagnoses personal-data leakage from AI chatbots, and filed it as a patent. I have practised system hacking and web penetration testing, and I document every finding with how to reproduce and fix it.</p>
+        <ul class="contact">
+          <li><a href="mailto:chanchan3314@naver.com">chanchan3314@naver.com</a></li>
+          <li><a href="tel:+821074063317">010-7406-3317</a></li>
+          <li><a href="https://github.com/seungchan-song" target="_blank" rel="noopener">github.com/seungchan-song</a></li>
+          <li>2001.01.04</li>
+        </ul>
       </div>
       <div class="photo">
-        <img src="assets/img/profile.jpg" alt="송승찬 / Seungchan Song" width="413" height="531" onerror="this.closest('.photo').classList.add('no-photo')">
-        <div class="mono-mark" aria-hidden="true">SC</div>
+        <img src="assets/img/profile.jpg" alt="송승찬 / Seungchan Song" width="413" height="531">
       </div>
     </div>
 
-    <ul class="facts reveal">
-      <li><span class="k"><span lang="ko">학력</span><span lang="en">Education</span></span><span class="v"><span lang="ko">세종대학교 정보보호학과<span class="m">2027.02 졸업 예정 · 학점 4.10 / 4.5 · 130학점</span></span><span lang="en">Sejong Univ., Information Security<span class="m">Expected Feb 2027 · GPA 4.10 / 4.5 · 130 credits</span></span></span></li>
-      <li><span class="k"><span lang="ko">자격 · 어학</span><span lang="en">Credentials</span></span><span class="v"><span lang="ko">정보보안기사 · TOEIC 850 · OPIc IH</span><span lang="en">Engineer Information Security · TOEIC 850 · OPIc IH</span></span></li>
-      <li><span class="k"><span lang="ko">프로그래밍 언어</span><span lang="en">Programming</span></span><span class="v">Python <em><span lang="ko">주력</span><span lang="en">main</span></em> · C</span></li>
-      <li><span class="k"><span lang="ko">외국어</span><span lang="en">Languages</span></span><span class="v">English <em><span lang="ko">능숙</span><span lang="en">proficient</span></em> · 中文 <em><span lang="ko">중급</span><span lang="en">intermediate</span></em></span></li>
-      <li><span class="k"><span lang="ko">이메일</span><span lang="en">Email</span></span><span class="v"><a href="mailto:chanchan3314@naver.com">chanchan3314@naver.com</a></span></li>
-      <li><span class="k"><span lang="ko">전화</span><span lang="en">Phone</span></span><span class="v"><a href="tel:+821074063317">010-7406-3317</a></span></li>
-      <li><span class="k"><span lang="ko">생년월일</span><span lang="en">Born</span></span><span class="v">2001.01.04</span></li>
-      <li><span class="k">GitHub</span><span class="v"><a href="https://github.com/seungchan-song" target="_blank" rel="noopener">github.com/seungchan-song</a></span></li>
-    </ul>
+    <dl class="info">
+      <div><dt><span lang="ko">학력</span><span lang="en">Education</span></dt>
+        <dd>
+          <span class="ln"><span lang="ko">세종대학교 정보보호학과 (2021.03 – 2027.02 졸업 예정) · 학점 4.10 / 4.5</span><span lang="en">Sejong University, Information Security (Mar 2021 – Feb 2027, expected) · GPA 4.10 / 4.5</span></span>
+          <span class="ln"><span lang="ko">상산고등학교 (2017.03 – 2020.02)</span><span lang="en">Sangsan High School (Mar 2017 – Feb 2020)</span></span>
+        </dd></div>
+      <div><dt><span lang="ko">자격 · 어학</span><span lang="en">Credentials</span></dt>
+        <dd><span lang="ko">정보보안기사 (2026.08) · TOEIC 850 (2026.02) · OPIc IH (2026.09)</span><span lang="en">Engineer Information Security (Aug 2026) · TOEIC 850 (Feb 2026) · OPIc IH (Sep 2026)</span></dd></div>
+      <div><dt><span lang="ko">해외 경험</span><span lang="en">Abroad</span></dt>
+        <dd>
+          <span class="ln">Shenzhen Funful Bilingual School · <span lang="ko">중국 선전 (2006.04 – 2009.07)</span><span lang="en">Shenzhen, China (Apr 2006 – Jul 2009)</span></span>
+          <span class="ln">Green Oasis School · <span lang="ko">중국 선전 (2009.11 – 2011.10)</span><span lang="en">Shenzhen, China (Nov 2009 – Oct 2011)</span></span>
+          <span class="ln">UBC Blockchain Summer Institute · <span lang="ko">캐나다 밴쿠버 (2026.08)</span><span lang="en">Vancouver, Canada (Aug 2026)</span></span>
+        </dd></div>
+      <div><dt><span lang="ko">외국어</span><span lang="en">Languages</span></dt>
+        <dd><span lang="ko">영어 능숙 · 중국어 중급</span><span lang="en">English (proficient) · Chinese (intermediate)</span></dd></div>
+      <div><dt><span lang="ko">주요 기술</span><span lang="en">Skills</span></dt>
+        <dd class="skills">
+          <span class="ln"><em><span lang="ko">언어 · 환경</span><span lang="en">Languages</span></em>Python · C · Linux</span>
+          <span class="ln"><em><span lang="ko">AI 보안</span><span lang="en">AI security</span></em>RAG · Haystack · FAISS</span>
+          <span class="ln"><em><span lang="ko">보안 점검</span><span lang="en">Security testing</span></em>Burp Suite · Nmap · Nikto · GDB · pwntools</span>
+        </dd></div>
+      <div><dt><span lang="ko">병역</span><span lang="en">Military</span></dt>
+        <dd><span lang="ko">공군 복무 (2023.04 – 2025.01)</span><span lang="en">Republic of Korea Air Force (Apr 2023 – Jan 2025)</span></dd></div>
+    </dl>
 
-    <div class="stats reveal">
-      <div class="stat">
-        <div class="num"><span lang="ko">3등<small>장려상</small></span><span lang="en">3rd<small>Encouragement Award</small></span></div>
-        <div class="cap"><span lang="ko">캡스톤 경진대회 (RAG-DIAG)</span><span lang="en">Capstone competition (RAG-DIAG)</span></div>
+    <div class="stats four">
+      <div><small>Patent</small><b><span lang="ko">특허 출원</span><span lang="en">Patent filed</span></b><span lang="ko">RAG 정보 유출 취약점 진단</span><span lang="en">RAG leakage diagnosis</span></div>
+      <div><small>Award</small><b><span lang="ko">장려상 (3등)</span><span lang="en">3rd prize</span></b><span lang="ko">캡스톤 경진대회</span><span lang="en">Capstone competition</span></div>
+      <div><small>Hackathon</small><b><span lang="ko">3등</span><span lang="en">3rd place</span></b><span lang="ko">UBC 블록체인 해커톤</span><span lang="en">UBC blockchain hackathon</span></div>
+      <div><small>Program</small><b>Elite Top 3</b><span lang="ko">빡공팟 시스템 해킹</span><span lang="en">System-hacking program</span></div>
+    </div>
+
+    <div class="toc" id="projects">
+      <p class="toc-h"><span lang="ko">프로젝트</span><span lang="en">Projects</span></p>
+      <ol>
+        <li><a href="#p1"><i>01</i><b>RAG-DIAG</b><span lang="ko">AI 챗봇 개인정보 유출 진단 도구 · 특허 출원</span><span lang="en">AI chatbot data-leak diagnosis tool · patent filed</span><em>p.2</em></a></li>
+        <li><a href="#p2"><i>02</i><b><span lang="ko">교육용 쇼핑몰 모의침투</span><span lang="en">Training-site pen test</span></b><span lang="ko">블랙박스 웹 모의침투 · 5개 항목 진단</span><span lang="en">Black-box web pen test · five checks</span><em>p.3</em></a></li>
+        <li><a href="#p3"><i>03</i><b>Health Access Registry</b><span lang="ko">UBC 블록체인 해커톤 3등</span><span lang="en">UBC blockchain hackathon, 3rd place</span><em>p.4</em></a></li>
+        <li><a href="#p4"><i>04</i><b><span lang="ko">보이스피싱 레이더</span><span lang="en">Voice-phishing Radar</span></b><span lang="ko">피해 통계 · 수법 분석 자동화</span><span lang="en">Automated fraud-trend analysis</span><em>p.5</em></a></li>
+        <li><a href="#p5"><i>05</i><b><span lang="ko">빡공팟 시스템 해킹</span><span lang="en">System-hacking program</span></b><span lang="ko">12주 과정 · Elite Top 3</span><span lang="en">12-week course · Elite Top 3</span><em>p.5</em></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 2. RAG-DIAG ───────── -->
+<section class="sheet proj" id="p1">
+  <div class="wrap">
+    <p class="eyebrow">Project 01 · <span lang="ko">AI 보안 진단</span><span lang="en">AI security</span></p>
+    <div class="phead"><h2 class="ptitle">RAG-DIAG</h2><a class="gh" href="https://github.com/seungchan-song/RAG-DIAG" target="_blank" rel="noopener">github.com/seungchan-song/RAG-DIAG ↗</a></div>
+    <p class="psub"><span lang="ko">AI 챗봇(RAG)의 개인정보 유출을 진단하는 CLI 도구</span><span lang="en">A CLI tool that diagnoses personal-data leakage from AI chatbots (RAG)</span></p>
+    <dl class="meta">
+      <div><dt><span lang="ko">기간</span><span lang="en">When</span></dt><dd>2026.03 – 2026.08</dd></div>
+      <div><dt><span lang="ko">구성</span><span lang="en">Team</span></dt><dd><span lang="ko">4인 팀 · 세종대 캡스톤 디자인</span><span lang="en">4 people · Sejong capstone</span></dd></div>
+      <div><dt><span lang="ko">역할</span><span lang="en">Role</span></dt><dd><span lang="ko">팀장 · 탐지 · 판정 · 위험도 설계</span><span lang="en">Lead · detection, judging, risk scoring</span></dd></div>
+    </dl>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">문제와 목표</span><span lang="en">Problem &amp; goal</span></h3>
+      <p lang="ko">문서를 검색해 답하는 AI 챗봇은 내부 문서에 든 개인정보를 답변으로 그대로 내보낼 수 있습니다. 공격 질문을 자동으로 보내고, 답변에서 개인정보를 찾아 위험도를 측정하는 진단 도구를 만드는 것이 목표였습니다.</p>
+      <p lang="en">Chatbots that answer from retrieved documents can leak the personal data inside them. We built a tool that sends attack questions, finds personal data in the answers and measures the risk.</p>
+    </div>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">수행 과정 · 나의 기여</span><span lang="en">What I contributed</span></h3>
+    <div class="split">
+      <div class="split-main">
+          <ol class="steps one">
+            <li><b><span lang="ko">팀장 · 일정과 회의 운영</span><span lang="en">Team lead · schedule and meetings</span></b>
+              <span lang="ko">3개월 WBS로 역할과 마감을 나누고, 주간 정기 회의는 진행 점검에, 예비 회의는 새 안건 결정에 쓰도록 나눠 운영했습니다.</span>
+              <span lang="en">Three-month WBS for roles and deadlines; weekly meetings for progress, a separate slot for decisions.</span></li>
+            <li><b><span lang="ko">한국형 개인정보 4단계 탐지</span><span lang="en">Four-stage Korean PII detection</span></b>
+              <span lang="ko">영어권 기준 도구는 주민등록번호 같은 한국 개인정보를 놓칩니다. 정규식 → 체크섬 검증 → NER 모델 → sLLM 교차 검증의 4단계로 탐지하고, 이를 바탕으로 공격 성공 판정 기준을 만들었습니다.</span>
+              <span lang="en">English-centric tools miss Korean identifiers. Regex → checksum → NER → sLLM cross-check, with the attack-success rule built on top.</span></li>
+            <li><b><span lang="ko">시나리오를 비교할 수 있는 위험도</span><span lang="en">One risk scale for every scenario</span></b>
+              <span lang="ko">개인정보 탐지 건수만 세면 주민등록번호와 전화번호 유출이 같은 위험이 됩니다. 개인정보보호법을 참고한 심각도와 공격 성공률을 한 점수로 합쳐, 공격 4종을 같은 기준으로 비교하고 대응 우선순위를 정할 수 있게 했습니다.</span>
+              <span lang="en">Severity graded under Korea's privacy law plus success rate gives one score, so four different attacks can be compared and prioritised.</span></li>
+            <li><b><span lang="ko">대조군 실험 제안</span><span lang="en">Proposed a control group</span></b>
+              <span lang="ko">공격 질문만 보내면 평범한 질문에도 나왔을 유출까지 공격 효과로 잡힙니다. 일반 질의를 대조군으로 두어 공격이 추가로 만든 유출만 측정했습니다.</span>
+              <span lang="en">Ordinary questions served as a control, so only the extra leakage caused by attacks was counted.</span></li>
+            <li><b><span lang="ko">문서화 총괄 · 특허 출원</span><span lang="en">Documentation and patent</span></b>
+              <span lang="ko">설계 문서 작성을 총괄하고, 발명 설명서와 선행기술 대비 차이점을 직접 작성해 특허 출원까지 이끌었습니다(공동 발명자).</span>
+              <span lang="en">Led the design docs; wrote the invention description and prior-art comparison and took the patent to filing (co-inventor).</span></li>
+          </ol>
       </div>
-      <div class="stat">
-        <div class="num"><span lang="ko">특허 출원<small>1건</small></span><span lang="en">Patent<small>1 filed</small></span></div>
-        <div class="cap"><span lang="ko">2026.08.31 출원 · 심사 대기 (등록 전)</span><span lang="en">Filed 2026.08.31 · pending examination</span></div>
-      </div>
-      <div class="stat">
-        <div class="num">Elite 3<small><span lang="ko">우수수료</span><span lang="en">Distinction</span></small></div>
-        <div class="cap"><span lang="ko">빡공팟 시스템 해킹 트랙 · 수료시험 TOP 3</span><span lang="en">P4C system-hacking track · top 3 on the completion exam</span></div>
+      <figure class="shot tall">
+        <img src="assets/img/rag-diag/architecture-simple.png" alt="RAG-DIAG 구조도: 공격 엔진 → 검색기 → 생성기(LLM) → 평가 및 리포트 엔진" width="1320" height="2319" loading="lazy">
+        <figcaption><span lang="ko">구조도</span><span lang="en">Architecture</span></figcaption>
+      </figure>
+    </div>
+    </div>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">결과</span><span lang="en">Results</span></h3>
+      <div class="stats four">
+        <div class="wide"><small>Patent</small><b class="txt"><span lang="ko">검색 증강 생성 환경에서의 정보 유출 취약점 진단 시스템 및 방법</span><span lang="en">System and Method for Diagnosing Information Leakage Vulnerabilities in RAG Environment</span></b><span lang="ko">출원번호 10-2026-0164171 · 출원일 2026.08.31<br>출원인 세종대학교산학협력단 · 심사 청구, 등록 심사 중</span><span lang="en">No. 10-2026-0164171 · filed 31 Aug 2026<br>Applicant: Sejong Univ. · examination requested, under review</span></div>
+        <div><small>Award</small><b><span lang="ko">장려상 (3등)</span><span lang="en">3rd prize</span></b><span lang="ko">캡스톤 경진대회 · 2026.06</span><span lang="en">Capstone competition · Jun 2026</span></div>
+        <div><small>Open source</small><b><span lang="ko">대회 출품</span><span lang="en">Contest entry</span></b><span lang="ko">2026 오픈소스 개발자대회</span><span lang="en">2026 open-source contest</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- about -->
-<section id="about">
+<!-- ───────── 3. training-site pen test ───────── -->
+<section class="sheet proj" id="p2">
   <div class="wrap">
-    <p class="eyebrow">About</p>
-    <h2 class="title"><span lang="ko">세 가지로 저를 설명합니다</span><span lang="en">Three things about how I work</span></h2>
-    <div class="cards3">
-      <article class="card reveal">
-        <div class="idx">01</div>
-        <h3><span lang="ko">측정하는 사람</span><span lang="en">I measure risk</span></h3>
-        <p>
-          <span lang="ko">위험을 감으로 말하지 않고 지표로 증명합니다. RAG-DIAG에서 위험도 산정식과 대조군 증분 측정, 그리고 한국형 개인정보(PII) 4단계 탐지 파이프라인을 설계했습니다.</span>
-          <span lang="en">I replace qualitative claims with metrics. In RAG-DIAG I designed the risk-score formula, the control-group incremental measurement and the four-stage Korean PII detection pipeline.</span>
-        </p>
-      </article>
-      <article class="card reveal">
-        <div class="idx">02</div>
-        <h3><span lang="ko">깊게 배우는 사람</span><span lang="en">I learn in depth</span></h3>
-        <p>
-          <span lang="ko">코딩 경험 없이 세종대학교 정보보호학과에 입학해 학과 수석, 빡공팟 시스템 해킹 트랙 Elite Top 3, 정보보안기사를 차례로 이뤄냈습니다.</span>
-          <span lang="en">I entered Sejong University's Information Security department with no coding background, then became the department's top student, finished a system-hacking track as Elite 3 and earned the Engineer Information Security certification, one after another.</span>
-        </p>
-      </article>
-      <article class="card reveal">
-        <div class="idx">03</div>
-        <h3><span lang="ko">팀을 움직이는 사람</span><span lang="en">I move teams</span></h3>
-        <p>
-          <span lang="ko">캡스톤과 UBC 해커톤에서 팀 리더를 맡았습니다. 중국 국제학교에서 5년 반을 보내 영어로 협업하는 데 익숙하고, 중국어는 중급 수준으로 UBC에서 중국인 팀원과 소통하는 데 썼습니다.</span>
-          <span lang="en">I led the capstone team and a hackathon team at UBC. Five and a half years at an international school in China made working in English natural; my Chinese is intermediate, which I used to talk with a Chinese teammate at UBC.</span>
-        </p>
-      </article>
+    <p class="eyebrow">Project 02 · <span lang="ko">웹 모의침투</span><span lang="en">Web penetration test</span></p>
+    <h2 class="ptitle"><span lang="ko">교육용 쇼핑몰 웹 모의침투</span><span lang="en">Web penetration test of a training shop</span></h2>
+    <p class="psub"><span lang="ko">실습용으로 구축된 가상 쇼핑몰 웹 서비스를 블랙박스 방식으로 점검하고 결과보고서로 정리</span><span lang="en">Black-box testing of a mock shopping site built for training, written up as a full report</span></p>
+    <dl class="meta">
+      <div><dt><span lang="ko">기간</span><span lang="en">When</span></dt><dd><span lang="ko">2026.10.28 – 10.29</span><span lang="en">28–29 Oct 2026</span></dd></div>
+      <div><dt><span lang="ko">구성</span><span lang="en">Team</span></dt><dd><span lang="ko">7인 팀 · SK쉴더스 루키즈 35기</span><span lang="en">7 people · SK shieldus Rookies 35</span></dd></div>
+      <div><dt><span lang="ko">역할</span><span lang="en">Role</span></dt><dd><span lang="ko">5개 항목 진단 · 대응방안 작성</span><span lang="en">Five checks · fixes</span></dd></div>
+    </dl>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">문제와 목표</span><span lang="en">Problem &amp; goal</span></h3>
+      <p lang="ko">OWASP Top 10과 KISA 주요 취약점을 바탕으로 한 17개 분류 30개 점검 항목을 팀원이 나눠 맡아, 정보 수집부터 실제 공격과 대응방안까지 담은 결과보고서를 만드는 것이 목표였습니다. 저는 서버 설정과 정보 노출, 개인정보보호법 적절성 등 5개 항목을 맡았습니다.</p>
+      <p lang="en">The team split 30 checks in 17 categories, based on the OWASP Top 10 and KISA's key vulnerabilities, and produced one report from reconnaissance through exploitation to fixes. I owned five checks covering server configuration, information exposure and compliance with Korea's Personal Information Protection Act.</p>
+    </div>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">수행 과정 · 나의 기여</span><span lang="en">What I contributed</span></h3>
+      <ol class="flow">
+        <li><span lang="ko">정보 수집</span><span lang="en">Recon</span></li>
+        <li><span lang="ko">취약점 분석</span><span lang="en">Analysis</span></li>
+        <li><span lang="ko">침투 테스트</span><span lang="en">Exploitation</span></li>
+        <li><span lang="ko">영향 분석</span><span lang="en">Impact</span></li>
+        <li><span lang="ko">대응방안</span><span lang="en">Fixes</span></li>
+      </ol>
+      <table class="rep">
+        <thead><tr>
+          <th><span lang="ko">점검 항목</span><span lang="en">Check</span></th>
+          <th><span lang="ko">확인한 내용</span><span lang="en">What I found</span></th>
+          <th><span lang="ko">대응방안</span><span lang="en">Recommended fix</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><th><span lang="ko">중요정보 평문전송</span><span lang="en">Plaintext transfer</span></th>
+            <td><span lang="ko">개인정보 수정 요청에 아이디 · 비밀번호가 평문으로 담겨 전송됨, 관리자 페이지에 주문자 IP 노출</span><span lang="en">Profile updates sent the ID and password in plaintext; the admin page showed buyers' IP addresses</span></td>
+            <td><span lang="ko">HTTPS 강제 전환, 쿠키 Secure · HttpOnly · SameSite 설정</span><span lang="en">Force HTTPS; Secure, HttpOnly and SameSite cookies</span></td></tr>
+          <tr><th><span lang="ko">불필요한 페이지</span><span lang="en">Unneeded pages</span></th>
+            <td><span lang="ko">DIRB · Nikto로 인증 없이 열리는 phpinfo.php 발견, PHP · OS · 커널 버전과 설정 경로 노출</span><span lang="en">DIRB and Nikto found phpinfo.php open without login, exposing PHP, OS and kernel versions</span></td>
+            <td><span lang="ko">진단용 페이지 삭제, 꼭 필요한 페이지는 인증 · 접근 IP 제한</span><span lang="en">Delete diagnostic pages; require login and IP limits for any that must stay</span></td></tr>
+          <tr><th><span lang="ko">테스트 · 데모 페이지</span><span lang="en">Test and demo pages</span></th>
+            <td><span lang="ko">백업 확장자 · robots.txt · 리스팅 경로까지 함께 확인, 운영에 불필요한 phpinfo.php를 삭제 대상으로 판정</span><span lang="en">Checked backup extensions, robots.txt and listable paths; flagged phpinfo.php for removal</span></td>
+            <td><span lang="ko">테스트 · 데모 페이지 정리, 디렉터리 리스팅 차단</span><span lang="en">Remove test pages; disable directory listing</span></td></tr>
+          <tr><th><span lang="ko">서버 보안 설정</span><span lang="en">Server configuration</span></th>
+            <td><span lang="ko">응답 헤더로 Apache · PHP · OpenSSL 버전과 WebDAV 노출, 주요 보안 헤더 누락, TRACE 메서드 허용</span><span lang="en">Headers leaked Apache, PHP and OpenSSL versions and WebDAV; security headers missing; TRACE allowed</span></td>
+            <td><span lang="ko">버전 정보 숨김(ServerTokens · expose_php), TRACE 차단, 보안 헤더 적용</span><span lang="en">Hide versions (ServerTokens, expose_php), disable TRACE, add security headers</span></td></tr>
+          <tr><th><span lang="ko">개인정보보호법 적절성</span><span lang="en">Privacy-law compliance</span></th>
+            <td><span lang="ko">주민등록번호 수집 · 평문 전송, 솔트 없는 비밀번호 저장, 동의 미분리 등 미흡 사항 7건을 법 조항(제22조 · 제24조의2 · 제29조 · 제30조)과 대조</span><span lang="en">Seven gaps, such as collecting resident numbers, plaintext transfer, unsalted passwords and bundled consent, each matched to the relevant article of the Act</span></td>
+            <td><span lang="ko">주민번호 수집 폐지, 전송 · 저장 암호화, 화면 마스킹, 동의 분리, 처리방침 정비</span><span lang="en">Stop collecting resident numbers; encrypt in transit and at rest; mask; separate consent; update the policy</span></td></tr>
+        </tbody>
+      </table>
+      <p class="note"><span lang="ko">사용 도구: Burp Suite · Nikto · DIRB · Nmap</span><span lang="en">Tools: Burp Suite · Nikto · DIRB · Nmap</span></p>
+    </div>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">결과</span><span lang="en">Results</span></h3>
+      <div class="stats">
+        <div><small>Team</small><b><span lang="ko">172건</span><span lang="en">172</span></b><span lang="ko">팀 전체가 찾은 취약점 (High 53건)</span><span lang="en">Vulnerabilities found by the team (53 high)</span></div>
+        <div><small>Mine</small><b><span lang="ko">담당 5개 항목</span><span lang="en">5 checks owned</span></b><span lang="ko">평문전송 · 불필요 페이지 · 테스트 페이지 · 서버 설정 · 개인정보보호법</span><span lang="en">Plaintext, unneeded pages, test pages, server config, privacy law</span></div>
+        <div><small>Compliance</small><b><span lang="ko">7건</span><span lang="en">7 gaps</span></b><span lang="ko">개인정보보호법 조항과 대조한 미흡 사항</span><span lang="en">Matched to articles of the privacy act</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- featured project -->
-<section id="project">
+<!-- ───────── 4. UBC hackathon ───────── -->
+<section class="sheet proj" id="p3">
   <div class="wrap">
-    <p class="eyebrow">Featured Project</p>
-    <div class="proj-head">
-      <h3>
-        <span lang="ko"><span>RAG-DIAG</span><br>RAG 개인정보 유출 취약점 진단 CLI</span>
-        <span lang="en"><span>RAG-DIAG</span><br>A CLI that diagnoses personal-data leakage in RAG systems</span>
-      </h3>
-      <div class="meta">
-        <span class="chip accent"><span lang="ko">팀장 · 4인 팀</span><span lang="en">Team lead · team of 4</span></span>
-        <span class="chip"><span lang="ko">세종대 캡스톤 디자인</span><span lang="en">Sejong Univ. capstone</span></span>
-        <span class="chip">2026.03 – 2026.09</span>
-        <span class="chip">MIT License</span>
-      </div>
-      <div class="links">
-        <a class="btn primary" href="https://github.com/seungchan-song/RAG-DIAG" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn" href="https://huggingface.co/townboy/kpfbert-ner" target="_blank" rel="noopener"><span lang="ko">PII 탐지 모델 ↗</span><span lang="en">PII NER model ↗</span></a>
-        <a class="btn ko-only" href="https://huggingface.co/bbanany/qwen25-3b-korean-pii-gguf" target="_blank" rel="noopener">교차검증 sLLM ↗</a>
-        <a class="btn ko-only" href="https://huggingface.co/datasets/townboy/korean-pii-dataset" target="_blank" rel="noopener">합성 데이터셋 ↗</a>
-      </div>
+    <p class="eyebrow">Project 03 · <span lang="ko">UBC 블록체인 해커톤</span><span lang="en">UBC blockchain hackathon</span></p>
+    <div class="phead"><h2 class="ptitle">Health Access Registry</h2><a class="gh" href="https://github.com/seungchan-song/blockathon" target="_blank" rel="noopener">github.com/seungchan-song/blockathon ↗</a></div>
+    <p class="psub"><span lang="ko">환자가 본인 의료기록의 열람 권한을 직접 관리하고, 모든 열람 시도를 위 · 변조할 수 없게 남기는 서비스</span><span lang="en">Patients control who may open their medical record, and every access attempt is kept tamper-proof</span></p>
+    <dl class="meta">
+      <div><dt><span lang="ko">기간</span><span lang="en">When</span></dt><dd><span lang="ko">2026.08 · 캐나다 UBC</span><span lang="en">Aug 2026 · UBC, Canada</span></dd></div>
+      <div><dt><span lang="ko">구성</span><span lang="en">Team</span></dt><dd><span lang="ko">4인 · 한국 · 스위스 · 중국</span><span lang="en">4 · Korea · Switzerland · China</span></dd></div>
+      <div><dt><span lang="ko">역할</span><span lang="en">Role</span></dt><dd><span lang="ko">팀장 · 서비스 구조 설계 · 배포</span><span lang="en">Team lead · service design · deployment</span></dd></div>
+    </dl>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">문제와 목표</span><span lang="en">Problem &amp; goal</span></h3>
+      <p lang="ko">의료기록 열람 기록은 병원이 관리합니다. 환자는 누가 본인 기록을 열람했는지 알려면 해당 병원에 요청할 수밖에 없고, 기록이 수정 · 삭제되어도 알아차리기 어렵습니다. 위 · 변조할 수 없는 공개 장부인 블록체인에 열람 권한과 열람 시도를 기록해, 환자가 직접 확인할 수 있는 서비스를 목표로 했습니다.</p>
+      <p lang="en">Hospitals keep the access logs for medical records. To learn who opened their file, patients must ask the hospital itself, and edits or deletions are hard to notice. We set out to record permissions and access attempts on a tamper-proof public ledger, so patients can check for themselves.</p>
     </div>
 
-    <!-- my role -->
-    <div class="role reveal">
-      <span class="rl">MY ROLE</span>
-      <h4 class="rt">
-        <span lang="ko">팀장으로 4인 팀을 이끌며, 진단의 판단 기준을 설계했습니다.</span>
-        <span lang="en">As team lead I ran a four-person team and designed how the diagnosis judges risk.</span>
-      </h4>
-      <ul class="role-list">
-        <li class="ri" lang="ko"><i>01</i><b>팀장</b><span>회의를 운영하고, 회의마다 팀원의 역할에 맞는 과제를 주고 피드백했습니다.</span></li>
-        <li class="ri" lang="ko"><i>02</i><b>한국형 PII 탐지 파이프라인 설계</b><span>4단계 구조와 판정 기준을 정했습니다.</span></li>
-        <li class="ri" lang="ko"><i>03</i><b>위험도 산정식 · 대조군 증분 실험 설계</b><span>공격이 만든 유출만 따로 재는 방식을 만들었습니다.</span></li>
-        <li class="ri" lang="ko"><i>04</i><b>문서화 총괄</b><span>요구사항 분석서, 프로젝트 설계서, 최종 보고서, 특허 문서 4종의 작성을 총괄했습니다.</span></li>
-        <li class="ri" lang="en"><i>01</i><b>Team lead</b><span>Ran the meetings, gave each teammate work that fit their role, and gave feedback every time.</span></li>
-        <li class="ri" lang="en"><i>02</i><b>Korean PII detection pipeline</b><span>Designed the four-stage structure and the judging rules.</span></li>
-        <li class="ri" lang="en"><i>03</i><b>Risk formula and control-group experiment</b><span>Built a way to measure only the leakage the attack adds.</span></li>
-        <li class="ri" lang="en"><i>04</i><b>Documentation lead</b><span>Led the writing of four documents: requirements analysis, project design, final report and patent application.</span></li>
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">수행 과정 · 나의 기여</span><span lang="en">What I contributed</span></h3>
+      <ol class="steps">
+        <li><b><span lang="ko">첫 설계의 문제 제기</span><span lang="en">Flagged the first design</span></b>
+          <span lang="ko">처음 안은 암호화한 진료 기록을 블록체인에 올리는 것이었습니다. 한 번 올린 정보는 지울 수 없어, 암호화해도 환자의 삭제 요청에 응할 수 없다는 문제를 제기했습니다.</span>
+          <span lang="en">The first plan put encrypted records on-chain. I raised that data on a chain can never be removed, so even encrypted records could not honour a patient's request to delete them.</span></li>
+        <li><b><span lang="ko">체인에 올릴 범위 결정</span><span lang="en">Drew the on-chain line</span></b>
+          <span lang="ko">"지울 수 있어야 하는 것은 체인 밖에 둔다"는 기준으로, 체인에는 허용한 주소와 열람 시도만 남기고 이름 · 진단 · 병력은 올리지 않았습니다.</span>
+          <span lang="en">Rule: anything that may need erasing stays off-chain. Only allowed addresses and access attempts go on-chain; no names, diagnoses or history.</span></li>
+        <li><b><span lang="ko">관리자 권한 제거 · 거절도 기록</span><span lang="en">No admin; refusals logged</span></b>
+          <span lang="ko">관리자 권한이 있으면 환자 모르게 권한이 바뀔 수 있어 없애고, 환자 지갑만 권한을 바꾸게 했습니다. 거절된 시도까지 남겨 단순한 접근 목록이 아닌 감사 기록이 되게 했습니다.</span>
+          <span lang="en">An admin could change permissions without the patient knowing, so only the patient's wallet can. Refused attempts are logged too, turning an access list into an audit trail.</span></li>
+        <li><b><span lang="ko">AI 활용 개발 · 직접 검증</span><span lang="en">AI-assisted build, hands-on checks</span></b>
+          <span lang="ko">코드는 AI 도구로 작성하되, 무엇을 체인에 올리고 누구에게 권한을 줄지 설계 기준을 가이드라인으로 먼저 정리해 전달했습니다. 권한 부여 · 회수 · 거절 기록이 의도대로 동작하는지 시나리오별로 직접 검증하는 데 시간을 들였습니다.</span>
+          <span lang="en">The code was written with AI tools, but I first wrote the design rules as a guideline: what goes on-chain and who holds authority. I then spent time checking grant, revoke and refusal logging scenario by scenario.</span></li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">한계와 다음 단계</span><span lang="en">Limits &amp; next steps</span></h3>
+      <ul class="learn">
+        <li><b><span lang="ko">의사 신원 확인</span><span lang="en">Doctor identity</span></b><span lang="ko">지갑 주인이 실제 의사인지는 확인하지 못합니다. 검증 가능한 자격증명(VC)을 붙이면 컨트랙트를 바꾸지 않고 보완할 수 있습니다.</span><span lang="en">We cannot prove a wallet belongs to a real doctor; verifiable credentials can add that without changing the contract.</span></li>
+        <li><b><span lang="ko">열람 관계 노출</span><span lang="en">Metadata exposure</span></b><span lang="ko">이름과 진단은 숨겨도 주소와 시각은 공개됩니다. 영지식 증명으로 누가 봤는지 드러내지 않고 열람을 검증하는 방향을 제시했습니다.</span><span lang="en">Names stay hidden but addresses and times are public; we proposed zero-knowledge proofs to verify access without revealing who looked.</span></li>
       </ul>
     </div>
 
-    <div class="case">
-      <h4><span lang="ko">Problem</span><span lang="en">Problem</span></h4>
-      <div>
-        <p lang="ko">RAG는 LLM 환각을 줄이는 실무 표준이 되었지만, 외부 지식베이스와 검색 단계가 더해지며 <b>검색 데이터 유출 · 멤버십 추론 · 시스템 프롬프트 유출 · 간접 프롬프트 주입</b>이라는 새 공격 표면이 생겼습니다. 한국어 환경에서는 13자리 숫자가 체크섬을 통과해야 주민등록번호이고, '하늘'이 이름인지 일반 단어인지는 문맥으로만 구분됩니다. 이런 한국형 개인정보 판정까지 포함해 위험을 정량 진단하는 도구가 필요했습니다.</p>
-        <p lang="en">RAG adds new attack surfaces: retrieved-data leakage, membership inference, system-prompt leakage and indirect prompt injection. Korean PII also needs country-specific judgement: a 13-digit number is a resident registration number only if its checksum holds, and whether a word is a name depends on context. I wanted a tool that quantifies leakage risk including that judgement.</p>
+    <div class="block">
+      <h3 class="lbl"><span lang="ko">결과</span><span lang="en">Results</span></h3>
+      <div class="stats two">
+        <div><small>Hackathon</small><b><span lang="ko">3등</span><span lang="en">3rd place</span></b><span lang="ko">Blockathon for Social Good 2026</span><span lang="en">Blockathon for Social Good 2026</span></div>
+        <div><small>Deployment</small><b><span lang="ko">테스트넷 실배포</span><span lang="en">Live on testnet</span></b><span lang="ko">Sepolia에 배포해 거절 → 허용 → 체인 로그 확인을 실시간 시연</span><span lang="en">Deployed to Sepolia; live demo of denied → granted → on-chain log</span></div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="case">
-      <h4><span lang="ko">Approach</span><span lang="en">Approach</span></h4>
-      <div>
-        <p class="gist">
-          <span lang="ko"><b>한 줄 요약</b> · 공격 질문을 RAG에 던지고, 돌아온 답변에서 개인정보가 얼마나 새었는지 점수로 매깁니다.</span>
-          <span lang="en"><b>In one line</b> · throw attack questions at a RAG system, then score how much personal data leaks in its answers.</span>
-        </p>
-
-        <div class="flow reveal" role="group" aria-label="RAG-DIAG flow">
-          <div class="fstep">
-            <div class="no">STEP 1</div>
-            <h5><span lang="ko">질문 던지기</span><span lang="en">Ask questions</span></h5>
-            <ul class="mini">
-              <li><b>R2</b><span lang="ko">검색 데이터 유출</span><span lang="en">Retrieved-data leak</span></li>
-              <li><b>R4</b><span lang="ko">멤버십 추론</span><span lang="en">Membership inference</span></li>
-              <li><b>R7</b><span lang="ko">시스템 프롬프트 노출</span><span lang="en">System-prompt leak</span></li>
-              <li><b>R9</b><span lang="ko">간접 프롬프트 주입</span><span lang="en">Indirect prompt injection</span></li>
-            </ul>
-            <p class="base">
-              <span lang="ko"><b>대조군</b> 공격 없이 평범하게 묻는 질문입니다. 비교 기준으로 함께 던집니다.</span>
-              <span lang="en"><b>Control group</b> ordinary questions with no attack, asked alongside as the baseline.</span>
-            </p>
-          </div>
-          <div class="farrow" aria-hidden="true"></div>
-          <div class="fstep">
-            <div class="no">STEP 2</div>
-            <h5><span lang="ko">진단 대상 RAG가 답하기</span><span lang="en">The target RAG answers</span></h5>
-            <p><span lang="ko">문서를 색인해 만든 RAG가 공격 질문과 대조군 질문에 모두 답합니다. 모델 · Top-k · 리랭커 설정은 바꿔 가며 진단합니다.</span><span lang="en">A RAG built over indexed documents answers both the attack and the control questions; model, Top-k and reranker can be changed per run.</span></p>
-            <div class="tags"><span>Haystack v2</span><span>FAISS</span><span>BGE-m3-ko</span><span>Qwen2.5-3B · Ollama</span></div>
-          </div>
-          <div class="farrow" aria-hidden="true"></div>
-          <div class="fstep out">
-            <div class="no">STEP 3</div>
-            <h5><span lang="ko">개인정보 찾아 점수 매기기</span><span lang="en">Find the leaked PII and score it</span></h5>
-            <ul class="mini k">
-              <li><b><span lang="ko">탐지</span><span lang="en">Detect</span></b><span><span lang="ko"><span class="nw">정규식 › 체크섬 ›</span> <span class="nw">NER › sLLM</span></span><span lang="en"><span class="nw">Regex › checksum ›</span> <span class="nw">NER › sLLM</span></span></span></li>
-              <li><b><span lang="ko">점수</span><span lang="en">Score</span></b><span><span lang="ko">성공률 50% + 강도 50%</span><span lang="en">50% success rate + 50% severity</span></span></li>
-              <li><b><span lang="ko">비교</span><span lang="en">Compare</span></b><span><span lang="ko">대조군 대비 증가분</span><span lang="en">Increase over the control</span></span></li>
-              <li><b><span lang="ko">출력</span><span lang="en">Output</span></b><span>HTML · CSV · JSON</span></li>
-            </ul>
-          </div>
-        </div>
-        <p class="aside">
-          <span lang="ko">전 과정이 로컬 모델로 돌아가 폐쇄망에서도 쓸 수 있습니다. 실행 ID · 설정 스냅샷 · 문서 해시를 남겨 중단 재개와 동일 조건 재실행도 됩니다.</span>
-          <span lang="en">Everything runs on local models, so it works in closed networks; run IDs, config snapshots and document hashes make runs resumable and replayable.</span>
-        </p>
+<!-- ───────── 5. Voice-phishing radar + P4C ───────── -->
+<section class="sheet proj duo">
+  <div class="wrap">
+    <article class="half" id="p4">
+      <p class="eyebrow">Project 04 · <span lang="ko">데이터 자동화</span><span lang="en">Data automation</span></p>
+      <div class="phead"><h2 class="ptitle sm"><span lang="ko">보이스피싱 레이더</span><span lang="en">Voice-phishing Radar</span></h2><a class="gh" href="https://github.com/seungchan-song/voicephishing-radar" target="_blank" rel="noopener">github.com/seungchan-song/voicephishing-radar ↗</a></div>
+      <dl class="meta">
+        <div><dt><span lang="ko">기간</span><span lang="en">When</span></dt><dd>2026.09 – 2026.10</dd></div>
+        <div><dt><span lang="ko">구성</span><span lang="en">Team</span></dt><dd><span lang="ko">6인 · SK쉴더스 루키즈</span><span lang="en">6 · SK shieldus Rookies</span></dd></div>
+        <div><dt><span lang="ko">역할</span><span lang="en">Role</span></dt><dd><span lang="ko">팀장 · 구조 설계 · 통합</span><span lang="en">Lead · design · integration</span></dd></div>
+      </dl>
+      <div class="block">
+        <h3 class="lbl"><span lang="ko">문제와 목표</span><span lang="en">Problem &amp; goal</span></h3>
+        <p lang="ko">보이스피싱의 지난 피해는 경찰청 통계로 연령 · 지역 · 연도별로 분석하고, 지금 유행하는 수법은 뉴스로 모아 앞으로의 피해를 막는 정보로 쓰고자 했습니다. 두 자료를 매주 자동으로 수집 · 분석해 전달하는 것이 목표였습니다.</p>
+        <p lang="en">Police statistics show past voice-phishing damage by age, region and year; news shows today's tactics, which helps prevent the next losses. We collected and analysed both automatically every week.</p>
       </div>
-    </div>
-
-    <div class="case result">
-      <h4><span lang="ko">Result</span><span lang="en">Result</span></h4>
-      <div>
-        <p class="gist">
-          <span lang="ko"><b>어떤 조건에서 얻은 결과인가</b></span>
-          <span lang="en"><b>Under what conditions were these results obtained?</b></span>
-        </p>
-        <dl class="setup reveal">
-          <div class="srow">
-            <dt><span lang="ko">대상</span><span lang="en">Target</span></dt>
-            <dd><span lang="ko"><b>RAG-DIAG에 내장된 RAG</b> · Haystack v2 · FAISS · Qwen2.5-3B (Ollama로 로컬 실행)</span><span lang="en"><b>The RAG built into RAG-DIAG</b> · Haystack v2 · FAISS · Qwen2.5-3B run locally with Ollama</span></dd>
-          </div>
-          <div class="srow">
-            <dt><span lang="ko">데이터</span><span lang="en">Data</span></dt>
-            <dd><span lang="ko"><b>합성 문서</b>에 <b>가짜</b> 개인정보(주민번호 · 카드 · 계좌 · 연락처)를 심었습니다. 실제 개인정보는 쓰지 않았습니다.</span><span lang="en"><b>Synthetic documents</b> seeded with <b>fake</b> personal data (ID numbers, cards, accounts, contacts). No real personal data.</span></dd>
-          </div>
-          <div class="srow">
-            <dt><span lang="ko">실험</span><span lang="en">Runs</span></dt>
-            <dd><span lang="ko"><b>공격 4종 + 대조군</b> · 질문 988개 · 리랭커 켬/끔 비교 · 2026.08.14 실행, 실패 0건</span><span lang="en"><b>4 attacks + a control group</b> · 988 queries · reranker on/off · run on 2026-08-14, 0 failures</span></dd>
-          </div>
-        </dl>
-
-        <p class="subh"><span lang="ko">그래서 무엇을 알았나</span><span lang="en">What I found</span></p>
-
-        <div class="findings">
-          <div class="finding reveal">
-            <p class="q"><span class="qn">Q1</span><span lang="ko">가장 위험한 공격은?</span><span lang="en">Which attack was riskiest?</span></p>
-            <h5 class="insight"><span lang="ko">자주 뚫리는 공격과 치명적인 공격은 다릅니다.</span><span lang="en">The attack that succeeds most often is not the most damaging.</span></h5>
-            <p class="why">
-              <span lang="ko">공격마다 성공률과 뚫렸을 때의 깊이(강도)를 합쳐 100점으로 매겼습니다. 시스템 프롬프트 노출은 성공률이 15.0%로 가장 낮았지만, 뚫리면 방어 규칙의 83%가 드러나 위험도 1위였습니다.</span>
-              <span lang="en">Each attack was scored out of 100 from its success rate and how deep it went. System-prompt leakage had the lowest success rate (15.0%) but exposed 83% of the defensive rules when it worked, so it ranked first.</span>
-            </p>
-            <p class="evt"><b><span lang="ko">근거</span><span lang="en">Data</span></b><span lang="ko">위험도(100점) 시스템 프롬프트 노출 49 · 멤버십 추론 40 · 간접 주입 39 · 검색 데이터 유출 37</span><span lang="en">Risk score (of 100): system-prompt leak 49 · membership inference 40 · indirect injection 39 · retrieved-data leak 37</span></p>
-          </div>
-
-          <div class="finding reveal">
-            <p class="q"><span class="qn">Q2</span><span lang="ko">공격이 평범한 질문보다 더 새게 했나?</span><span lang="en">Did the attack leak more than ordinary questions?</span></p>
-            <h5 class="insight"><span lang="ko">공격이 만든 유출은, 대조군이 있어야 보입니다.</span><span lang="en">What an attack adds only shows up with a control group.</span></h5>
-            <p class="why">
-              <span lang="ko">질문 수를 맞춰 비교하니, 검색 데이터 유출 공격은 평범한 질문(대조군)보다 주민번호 · 카드 · 계좌 같은 정보를 2배 더 새게 했습니다. 대조군이 없으면 원래 새던 양과 공격이 늘린 양을 가를 수 없습니다.</span>
-              <span lang="en">With question counts matched, the retrieved-data-leak attack exposed twice as much ID, card and account data as ordinary questions. Without a control group you cannot separate what leaks anyway from what the attack adds.</span>
-            </p>
-            <p class="evt"><b><span lang="ko">근거</span><span lang="en">Data</span></b><span lang="ko">고유식별 · 금융 정보 노출 대조군 27건 → 공격 54건</span><span lang="en">Unique-ID and financial PII exposed: control 27 → attack 54</span></p>
-          </div>
-
-          <div class="finding reveal">
-            <p class="q"><span class="qn">Q3</span><span lang="ko">방어 장치를 켜면 안전해지나?</span><span lang="en">Does turning on a defence make it safe?</span></p>
-            <h5 class="insight"><span lang="ko">한 공격을 막는 방어가, 다른 공격에는 불리할 수 있습니다.</span><span lang="en">A defence that blocks one attack can make another easier.</span></h5>
-            <p class="why">
-              <span lang="ko">리랭커(검색 결과를 다시 걸러 주는 장치)를 켜자 검색 데이터 유출은 줄었지만, 멤버십 추론은 오히려 늘었습니다. 방어 수단은 도입 전에 내 환경에서 직접 재 봐야 합니다.</span>
-              <span lang="en">Turning on a reranker, which re-filters retrieved passages, reduced retrieved-data leakage but increased membership inference. A defence has to be measured in your own environment before you adopt it.</span>
-            </p>
-            <p class="evt"><b><span lang="ko">근거</span><span lang="en">Data</span></b><span lang="ko">리랭커 끔 → 켬, 공격 성공 건수 검색 데이터 유출 37 → 12 · 멤버십 추론 15 → 46</span><span lang="en">Reranker off → on, successful attacks: retrieved-data leak 37 → 12 · membership inference 15 → 46</span></p>
-          </div>
-        </div>
-
-        <p class="verify">
-          <span lang="ko"><b>품질 검증</b> · 회귀 테스트 443건 전량 통과 · PII 탐지 재현율 94.5% · 정밀도 79.7% (합성 홀드아웃 문서 1,320건 기준)</span>
-          <span lang="en"><b>Quality checks</b> · all 443 regression tests passing · PII detector recall 94.5%, precision 79.7% (1,320-document synthetic hold-out set)</span>
-        </p>
-
-        <p class="subh shots-h"><span lang="ko">실제 화면</span><span lang="en">Screens</span></p>
-        <div class="shots">
-          <figure class="shot"><a href="assets/img/rag-diag/architecture-system.png" target="_blank" rel="noopener"><img src="assets/img/rag-diag/architecture-system.png" alt="RAG-DIAG 시스템 구조도" loading="lazy" onerror="noimg(this)"></a><figcaption><span lang="ko">시스템 구조도</span><span lang="en">System architecture</span></figcaption></figure>
-          <figure class="shot"><a href="assets/img/rag-diag/dashboard-overview.png" target="_blank" rel="noopener"><img src="assets/img/rag-diag/dashboard-overview.png" alt="RAG-DIAG 진단 리포트 화면" loading="lazy" onerror="noimg(this)"></a><figcaption><span lang="ko">진단 리포트 화면</span><span lang="en">Diagnosis report</span></figcaption></figure>
-          <figure class="shot"><a href="assets/img/rag-diag/cli-run.png" target="_blank" rel="noopener"><img src="assets/img/rag-diag/cli-run.png" alt="RAG-DIAG CLI 실행 화면" loading="lazy" onerror="noimg(this)"></a><figcaption><span lang="ko">CLI 실행 화면</span><span lang="en">CLI run</span></figcaption></figure>
-        </div>
-        <p class="hint no-print"><span lang="ko">이미지를 누르면 원본 크기로 열립니다.</span><span lang="en">Click an image to open it full size.</span></p>
+      <div class="block">
+        <h3 class="lbl"><span lang="ko">수행 과정 · 나의 기여</span><span lang="en">What I contributed</span></h3>
+        <ol class="steps three">
+          <li><b><span lang="ko">결과를 한 파일로 모은 설계</span><span lang="en">One results file</span></b>
+            <span lang="ko">통계와 뉴스를 분석 · 처리한 결과를 result.json 하나로 모으고 웹 · 메일 · Notion은 이 파일만 읽게 해, 기능별로 따로 개발하고 수정하기 용이하게 했습니다.</span>
+            <span lang="en">All processed statistics and news go into one result.json that the web, mail and Notion read, so each feature can be built and fixed on its own.</span></li>
+          <li><b><span lang="ko">수집부터 전달까지 자동화</span><span lang="en">End-to-end automation</span></b>
+            <span lang="ko">공통 코드와 통합 실행 스크립트를 맡아, 크롤링부터 대시보드 · 메일 · Notion 갱신까지 매주 월요일 자동으로 실행되게 했습니다.</span>
+            <span lang="en">My shared code and run-all script run everything from crawling to dashboard, mail and Notion updates every Monday.</span></li>
+          <li><b><span lang="ko">역할별 출력 3가지</span><span lang="en">Three outputs by role</span></b>
+            <span lang="ko">대시보드는 현황 조회, 경보 메일은 새 수법 알림, Notion은 주차별 기록 보관으로 출력의 역할을 나눴습니다.</span>
+            <span lang="en">Dashboard for status, alert mail for new tactics, Notion for the weekly record.</span></li>
+        </ol>
       </div>
-    </div>
-
-    <div class="case outcome">
-      <h4><span lang="ko">Outcome</span><span lang="en">Outcome</span></h4>
-      <div>
-        <ul class="outs">
-          <li>
-            <span class="ot"><span lang="ko">수상</span><span lang="en">Award</span></span>
-            <span><b><span lang="ko">캡스톤 경진대회 장려상 (3등)</span><span lang="en">Capstone competition, 3rd place (Encouragement Award)</span></b></span>
-          </li>
-          <li>
-            <span class="ot"><span lang="ko">특허</span><span lang="en">Patent</span></span>
-            <span>
-              <b><span lang="ko">특허 출원 1건</span><span lang="en">1 patent application</span></b>
-              <span lang="ko"> · 「검색 증강 생성 환경에서의 정보 유출 취약점 진단 시스템 및 방법」</span>
-              <span lang="en"> · “System and method for diagnosing information-leakage vulnerabilities in retrieval-augmented generation”</span>
-              <small><span lang="ko">출원번호 10-2026-0164171 · 2026.08.31 출원 · 심사 대기(등록 전) · 출원인 세종대학교산학협력단</span><span lang="en">No. 10-2026-0164171 · filed 2026.08.31 · pending, not yet granted · applicant: Sejong Univ. Industry-Academic Cooperation Foundation</span></small>
-            </span>
-          </li>
-          <li>
-            <span class="ot"><span lang="ko">대회</span><span lang="en">Contest</span></span>
-            <span><b><span lang="ko">2026 오픈소스 개발자대회 학생부 출품</span><span lang="en">Entered the 2026 Open Source Developer Contest (student division)</span></b></span>
-          </li>
-          <li>
-            <span class="ot"><span lang="ko">공개</span><span lang="en">Release</span></span>
-            <span><b><span lang="ko">오픈소스 공개</span><span lang="en">Open-sourced</span></b><span lang="ko"> · 코드(MIT License)와 PII 탐지 모델 · 교차검증 sLLM · 합성 데이터셋을 GitHub와 Hugging Face에 공개</span><span lang="en"> · code (MIT License) plus the models and dataset on GitHub and Hugging Face</span></span>
-          </li>
+      <div class="block">
+        <h3 class="lbl"><span lang="ko">배우고 성장한 점</span><span lang="en">What I learned</span></h3>
+        <ul class="learn">
+          <li><b><span lang="ko">파이프라인 단위의 자동화 설계</span><span lang="en">Designing for automation</span></b><span lang="ko">크롤링 · 분석 · 시각화 · 알림을 하나의 파이프라인으로 묶고 정기 실행까지 연결하며, 처음부터 자동화를 전제로 구조를 짜는 법을 익혔습니다.</span><span lang="en">One scheduled pipeline from crawling to alerts taught me to design for automation from the start.</span></li>
+          <li><b><span lang="ko">설계 결정에 근거를 남기기</span><span lang="en">Recording why</span></b><span lang="ko">결과 파일을 하나로 둔 이유(개발 용이성)와 출력을 셋으로 나눈 이유(역할 분리)를 README에 남겨, 누구나 구조를 이해하고 기능을 이어 붙일 수 있게 했습니다.</span><span lang="en">The README records why there is one results file (easier development) and three outputs (separate roles), so anyone can extend it.</span></li>
         </ul>
       </div>
-    </div>
+    </article>
+
+    <article class="half" id="p5">
+      <p class="eyebrow">Project 05 · <span lang="ko">시스템 해킹</span><span lang="en">System hacking</span></p>
+      <h2 class="ptitle sm"><span lang="ko">빡공팟 13기 시스템 해킹 (RED 코스)</span><span lang="en">P4C cohort 13, system hacking (RED course)</span></h2>
+      <dl class="meta">
+        <div><dt><span lang="ko">기간</span><span lang="en">When</span></dt><dd>2025.06 – 2025.08</dd></div>
+        <div><dt><span lang="ko">형태</span><span lang="en">Format</span></dt><dd><span lang="ko">개인 · 12주 과정</span><span lang="en">Individual · 12 weeks</span></dd></div>
+        <div><dt><span lang="ko">수료율</span><span lang="en">Completion</span></dt><dd>31.8%</dd></div>
+      </dl>
+      <div class="block">
+        <h3 class="lbl"><span lang="ko">학습 목표</span><span lang="en">Learning goal</span></h3>
+        <p lang="ko">공격자가 프로그램의 메모리를 다루는 원리를 이해하고, 보호기법이 적용된 바이너리를 직접 분석해 공략할 수 있는 실력을 갖추는 것이 목표였습니다.</p>
+        <p lang="en">To understand how attackers manipulate program memory, and to be able to analyse and exploit binaries with protections enabled.</p>
+      </div>
+      <div class="block">
+        <h3 class="lbl"><span lang="ko">수행 과정</span><span lang="en">What I did</span></h3>
+        <ol class="steps three">
+          <li><b><span lang="ko">메모리와 실행 구조</span><span lang="en">Memory and execution</span></b>
+            <span lang="ko">스택 · 힙 구조와 어셈블리, 실행 파일 포맷을 익히고 GDB(pwndbg)로 실행 흐름을 직접 따라가며 분석했습니다.</span>
+            <span lang="en">Stack and heap layout, assembly and executable formats, traced step by step in GDB (pwndbg).</span></li>
+          <li><b><span lang="ko">공격 기법과 취약점 분석</span><span lang="en">Exploits and bug hunting</span></b>
+            <span lang="ko">버퍼 오버플로우와 ROP를 워게임으로 재현하며 보호기법 우회 원리를 익히고, 퍼저와 코드 오디팅으로 취약점을 찾는 법을 실습했습니다.</span>
+            <span lang="en">Reproduced overflows and ROP on wargames to learn protection bypasses; found bugs with fuzzers and code review.</span></li>
+          <li><b><span lang="ko">학습 기록 정리</span><span lang="en">Written notes</span></b>
+            <span lang="ko">12주간 공부한 이론과 과제 풀이를 모두 Notion에 기록하고, 자주 쓰는 기법은 따로 모아 '포너블 백과사전'으로 정리했습니다.</span>
+            <span lang="en">Wrote up every week's theory and assignments in Notion, plus my own pwnable reference.</span></li>
+        </ol>
+      </div>
+      <div class="block">
+        <h3 class="lbl"><span lang="ko">결과 · 배운 점</span><span lang="en">Results &amp; lessons</span></h3>
+        <div class="stats">
+          <div><small>Result</small><b>Elite Top 3</b><span lang="ko">수료생 중 상위 3명</span><span lang="en">Top 3 of all finishers</span></div>
+          <div class="wide"><small>Lesson</small><b class="txt"><span lang="ko">공격 원리에서 방어 기준으로</span><span lang="en">From attack to defence</span></b><span lang="ko">메모리가 어떻게 조작되는지 직접 재현해 보니, 코드에서 경계 검사와 입력 검증이 빠진 곳을 먼저 보게 됐습니다.</span><span lang="en">Having manipulated memory myself, I look first for missing bounds checks and input validation.</span></div>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
-<!-- other work -->
-<section id="work">
+<!-- ───────── 6. timeline ───────── -->
+<section class="sheet" id="history">
   <div class="wrap">
-    <p class="eyebrow">Other Work</p>
-    <h2 class="title"><span lang="ko">그 밖의 활동</span><span lang="en">Other work</span></h2>
-    <div class="work-grid">
-      <article class="work reveal">
-        <div class="tag">SYSTEM HACKING</div>
-        <h3><span lang="ko">빡공팟 시스템 해킹 트랙</span><span lang="en">P4C system-hacking track</span></h3>
-        <div class="when">2025.06.09 – 2025.08.31</div>
-        <p lang="ko"><b>수료시험 TOP 3 (Elite 3).</b> 수료율 31.8%의 서바이벌 과정에서 수료시험 상위 3명에게 주는 Elite 3 우수 수료를 받았습니다. 메모리 취약점 공략부터 SROP 등 보호기법 우회까지 직접 재현했습니다. 리눅스 지식 없이 시작해 초반 과제를 끝내지 못해 탈락 위기였지만, 개념 사이의 연결을 먼저 정리하고 실습으로 재현하는 방식으로 공부법을 바꾼 뒤 수료시험에서 3위 안에 들었습니다.</p>
-        <p lang="en"><b>Top 3 on the completion exam (Elite 3).</b> Survived a program with a 31.8% completion rate and earned the Elite 3 distinction given to the top three on the final exam. Reproduced memory exploits through to bypassing protections such as SROP. I started with no Linux background and nearly dropped out after failing early assignments; I changed how I studied (map how the concepts connect first, then reproduce them hands-on) and finished in the top three.</p>
-      </article>
-      <article class="work reveal">
-        <div class="tag">BLOCKCHAIN · HACKATHON</div>
-        <h3><span lang="ko">UBC 블록체인 연수 · Health Access Registry</span><span lang="en">UBC Blockchain Summer Institute</span></h3>
-        <div class="when">2026.08.16 – 2026.08.30</div>
-        <p lang="ko"><b>해커톤 3등, 팀 리더.</b> 스위스·중국 팀원과 함께 환자 의료기록의 접근 권한과 접근 기록을 온체인으로 관리하는 시스템을 설계했습니다. 블록체인에는 환자 데이터를 두지 않고 누가 접근 가능했고 누가 시도했는지만 남깁니다.</p>
-        <p lang="en"><b>Hackathon 3rd place, team lead.</b> With Swiss and Chinese teammates, designed an on-chain permission list and tamper-proof access log for medical records. No patient data goes on the chain, only who was allowed in and who tried.</p>
-        <a class="more" href="https://github.com/seungchan-song/blockathon" target="_blank" rel="noopener">GitHub ↗</a>
-      </article>
-      <article class="work reveal">
-        <div class="tag">PYTHON · TEAM LEAD</div>
-        <h3><span lang="ko">보이스피싱 레이더</span><span lang="en">Voice Phishing Radar</span></h3>
-        <div class="when">2026.09.21 – 2026.10.02</div>
-        <p lang="ko"><b>SK쉴더스 루키즈 35기 팀 프로젝트, 6인 팀의 팀장.</b> 경찰청 공공 통계와 뉴스를 결합해 피해 현황과 최신 수법을 분석하고, 웹 대시보드·경보 메일·Notion 기록으로 보여주는 시스템입니다. 저는 공통 코드와 Flask 웹 개발, 통합과 저장소 관리를 맡았습니다.</p>
-        <p lang="en"><b>SK Shieldus Rookies team project, team lead of 6.</b> Combines police statistics and news to show damage trends and new scam methods as a web dashboard, alert mail and Notion log. I built the shared code and the Flask web app and managed integration and the repository.</p>
-        <a class="more" href="https://github.com/seungchan-song/voicephishing-radar" target="_blank" rel="noopener">GitHub ↗</a>
-      </article>
-    </div>
-  </div>
-</section>
+    <p class="eyebrow">Timeline</p>
+    <h2 class="ptitle"><span lang="ko">연혁</span><span lang="en">Timeline</span></h2>
+    <ul class="legend">
+      <li class="k-win"><i></i><span lang="ko">수상 · 성과</span><span lang="en">Awards</span></li>
+      <li class="k-proj"><i></i><span lang="ko">프로젝트</span><span lang="en">Projects</span></li>
+      <li class="k-cert"><i></i><span lang="ko">자격 · 어학</span><span lang="en">Credentials</span></li>
+      <li class="k-now"><i></i><span lang="ko">진행 중 · 예정</span><span lang="en">Ongoing &amp; upcoming</span></li>
+      <li class="k-base"><i></i><span lang="ko">학력 · 기타</span><span lang="en">Education &amp; other</span></li>
+    </ul>
 
-<!-- skills -->
-<section id="skills">
-  <div class="wrap">
-    <p class="eyebrow">Skills</p>
-    <h2 class="title"><span lang="ko">사용해 본 언어와 도구</span><span lang="en">Languages &amp; tools I have used</span></h2>
-    <p class="lead"><span lang="ko">프로젝트와 수업, 실습에서 실제로 써 본 것만 적었습니다.</span><span lang="en">Only things I have actually used in projects, coursework and labs.</span></p>
-
-    <div class="lang-pair">
-      <div>
-        <p class="subh"><span lang="ko">프로그래밍 언어</span><span lang="en">Programming languages</span></p>
-        <div class="langcards">
-          <div class="sl main reveal">
-            <em><span lang="ko">주력</span><span lang="en">MAIN</span></em>
-            <b>Python</b>
-            <span><span lang="ko">RAG-DIAG · 보이스피싱 레이더</span><span lang="en">RAG-DIAG · Voice Phishing Radar</span></span>
-          </div>
-          <div class="sl reveal">
-            <em></em>
-            <b>C</b>
-            <span><span lang="ko">시스템 해킹 실습 · 전공 수업</span><span lang="en">System-hacking practice · coursework</span></span>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p class="subh"><span lang="ko">외국어</span><span lang="en">Foreign languages</span></p>
-        <div class="langcards">
-          <div class="sl main reveal">
-            <em><span lang="ko">능숙</span><span lang="en">PROFICIENT</span></em>
-            <b>English</b>
-            <span><span lang="ko">TOEIC 850 · OPIc IH · 중국 국제학교 5년 반 · UBC 영어 협업</span><span lang="en">TOEIC 850 · OPIc IH · 5.5 years at an international school in China · English teamwork at UBC</span></span>
-          </div>
-          <div class="sl reveal">
-            <em><span lang="ko">중급</span><span lang="en">INTERMEDIATE</span></em>
-            <b>中文</b>
-            <span><span lang="ko">영어와는 격차가 있습니다. 중국 생활 경험 · UBC에서 중국인 팀원과 소통</span><span lang="en">Clearly behind my English. Lived in China · used it with a Chinese teammate at UBC</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="subh"><span lang="ko">도구 · 기술</span><span lang="en">Tools &amp; technologies</span></p>
-    <div class="skill-grid">
-      <div class="sg reveal">
-        <h3>RAG · LLM</h3>
-        <div class="chips"><span class="chip">Haystack v2</span><span class="chip">FAISS</span><span class="chip">Ollama</span><span class="chip">Qwen2.5-3B</span><span class="chip">BGE-m3-ko</span><span class="chip">Hugging Face</span><span class="chip">KPF-BERT (NER)</span></div>
-        <p class="used">RAG-DIAG</p>
-      </div>
-      <div class="sg reveal">
-        <h3><span lang="ko">웹 · 데이터 · 협업</span><span lang="en">Web · data · collaboration</span></h3>
-        <div class="chips"><span class="chip">Flask</span><span class="chip">pandas</span><span class="chip">matplotlib</span><span class="chip">BeautifulSoup</span><span class="chip">MongoDB Atlas</span><span class="chip">Notion API</span><span class="chip">Typer · Rich (CLI)</span><span class="chip">Git · GitHub</span><span class="chip">Notion</span></div>
-        <p class="used"><span lang="ko">보이스피싱 레이더 · RAG-DIAG</span><span lang="en">Voice Phishing Radar · RAG-DIAG</span></p>
-      </div>
-      <div class="sg reveal">
-        <h3><span lang="ko">보안 · 시스템</span><span lang="en">Security · systems</span></h3>
-        <div class="chips"><span class="chip">Linux</span><span class="chip"><span lang="ko">메모리 취약점 공략 · SROP</span><span lang="en">Memory exploitation · SROP</span></span><span class="chip">Proxmox</span><span class="chip">Docker</span><span class="chip">QEMU</span><span class="chip"><span lang="ko">디지털 포렌식 (FTK Imager · HxD)</span><span lang="en">Forensics (FTK Imager · HxD)</span></span></div>
-        <p class="used"><span lang="ko">빡공팟 · 전공 실습</span><span lang="en">P4C track · coursework labs</span></p>
-      </div>
-      <div class="sg reveal">
-        <h3><span lang="ko">블록체인</span><span lang="en">Blockchain</span></h3>
-        <div class="chips"><span class="chip">Ethereum (Sepolia)</span><span class="chip">MetaMask</span></div>
-        <p class="used"><span lang="ko">UBC 해커톤 (Health Access Registry)</span><span lang="en">UBC hackathon (Health Access Registry)</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- profile / timeline -->
-<section id="profile">
-  <div class="wrap">
-    <p class="eyebrow">Profile</p>
-    <h2 class="title"><span lang="ko">학력 · 교육 · 자격 연혁</span><span lang="en">Education, training &amp; credentials</span></h2>
-
-    <ol class="hist">
-      <li class="ev edu">
-        <div class="d"><span>2017.03 –</span><span>2020.02</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">학력</span><span lang="en">Education</span></span><b><span lang="ko">상산고등학교</span><span lang="en">Sangsan High School</span></b></div>
-        </div>
-      </li>
-      <li class="ev edu">
-        <div class="d"><span>2021.03</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">학력</span><span lang="en">Education</span></span><b><span lang="ko">세종대학교 정보보호학과 입학</span><span lang="en">Entered Sejong University, Information Security</span></b></div>
-          <p><span lang="ko">코딩 경험 없이 입학해 파이썬과 C를 병행 학습했습니다.</span><span lang="en">Started with no coding background and studied Python and C side by side.</span></p>
-        </div>
-      </li>
-      <li class="ev mil">
-        <div class="d"><span>2023.04 –</span><span>2025.01</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">군 복무</span><span lang="en">Service</span></span><b><span lang="ko">대한민국 공군 · 대공포 운용</span><span lang="en">Republic of Korea Air Force · anti-aircraft gun operation</span></b></div>
-          <p><span lang="ko">으뜸병사 · 병사와 간부 사이 소통 중재 (약 60명, 6개월)</span><span lang="en">Model soldier: mediated between about 60 soldiers and officers (6 months)</span></p>
-        </div>
-      </li>
-      <li class="ev trn">
-        <div class="d"><span>2025.06.09 –</span><span>2025.08.31</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">교육·연수</span><span lang="en">Training</span></span><b><span lang="ko">빡공팟(P4C) 13기 시스템 해킹 트랙</span><span lang="en">P4C cohort 13, system-hacking track</span></b></div>
-          <p><span lang="ko">RED 코스 · 수료율 31.8% · 수료시험 TOP 3 · Elite 3 우수수료증</span><span lang="en">RED course · 31.8% completion rate · top 3 on the completion exam · Elite 3 certificate of excellence</span></p>
-        </div>
-      </li>
-      <li class="ev crd">
-        <div class="d"><span>2026.02.28</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">자격·어학</span><span lang="en">Credential</span></span><b>TOEIC · 850</b></div>
-          <p>LC 465 · RC 385</p>
-        </div>
-      </li>
-      <li class="ev trn">
-        <div class="d"><span>2026.08.16 –</span><span>2026.08.30</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">교육·연수</span><span lang="en">Training</span></span><b>UBC Blockchain Summer Institute</b></div>
-          <p><span lang="ko">캐나다 UBC · 블록체인 기술·규제 연수 · 해커톤 3등(팀 리더)</span><span lang="en">University of British Columbia, Canada · blockchain technology and regulation · hackathon 3rd place (team lead)</span></p>
-        </div>
-      </li>
-      <li class="ev crd">
-        <div class="d"><span>2026.08.28</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">자격·어학</span><span lang="en">Credential</span></span><b><span lang="ko">정보보안기사</span><span lang="en">Engineer Information Security</span></b></div>
-          <p><span lang="ko">국가기술자격</span><span lang="en">Korean national technical qualification</span></p>
-        </div>
-      </li>
-      <li class="ev crd">
-        <div class="d"><span>2026.09.27</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">자격·어학</span><span lang="en">Credential</span></span><b>OPIc · IH (Intermediate High)</b></div>
-          <p><span lang="ko">ACTFL 영어 말하기 평가</span><span lang="en">ACTFL English speaking assessment</span></p>
-        </div>
-      </li>
-      <li class="ev trn">
-        <div class="d"><span>2026.09 –</span></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">교육·연수</span><span lang="en">Training</span></span><b><span lang="ko">SK쉴더스 루키즈 35기</span><span lang="en">SK Shieldus Rookies, cohort 35</span></b></div>
-          <p><span lang="ko">클라우드기반 스마트 융합보안 과정 · 진행 중</span><span lang="en">Cloud-based smart convergence security course · in progress</span></p>
-        </div>
-      </li>
-      <li class="ev edu fut">
-        <div class="d"><span>2027.02</span><small><span lang="ko">예정</span><span lang="en">expected</span></small></div>
-        <div class="rail"><i></i></div>
-        <div class="body">
-          <div class="head"><span class="kind"><span lang="ko">학력</span><span lang="en">Education</span></span><b><span lang="ko">세종대학교 정보보호학과 졸업</span><span lang="en">Sejong University, Information Security: graduation</span></b></div>
-          <p><span lang="ko">4학년 2학기, 마지막 학기 재학 중입니다. 군 복무 후 3학년으로 복학했고, 복학 첫 학기에 학과 수석을 했습니다.</span><span lang="en">Now in the final (4th-year, 2nd) semester. Returned as a junior after military service and finished the first semester back as the department's top student.</span></p>
-          <div class="badges"><span><span lang="ko">총 취득 </span><span lang="en">Credits </span><strong><span lang="ko">130학점</span><span lang="en">130</span></strong></span><span><span lang="ko">평점 평균 </span><span lang="en">GPA </span><strong>4.10 / 4.5</strong></span></div>
-        </div>
-      </li>
+    <ol class="tline">
+      <li class="k-base yr" data-y="2006"><time>2006.04 – 2009.07</time><span>Shenzhen Funful Bilingual School<span lang="ko"> · 중국 선전</span><span lang="en"> · Shenzhen, China</span></span></li>
+      <li class="k-base yr" data-y="2009"><time>2009.11 – 2011.10</time><span>Green Oasis School<span lang="ko"> · 중국 선전</span><span lang="en"> · Shenzhen, China</span></span></li>
+      <li class="k-base yr" data-y="2017"><time>2017.03 – 2020.02</time><span lang="ko">상산고등학교</span><span lang="en">Sangsan High School</span></li>
+      <li class="k-base yr" data-y="2021"><time>2021.03</time><span lang="ko">세종대학교 정보보호학과 입학</span><span lang="en">Entered Sejong University, Information Security</span></li>
+      <li class="k-base yr" data-y="2023"><time>2023.04 – 2025.01</time><span lang="ko">공군 복무</span><span lang="en">Republic of Korea Air Force</span></li>
+      <li class="k-win yr" data-y="2025"><time>2025.06 – 2025.08</time><span lang="ko">빡공팟 13기 시스템 해킹 과정 · Elite Top 3 수료</span><span lang="en">P4C cohort 13, system hacking · Elite Top 3</span></li>
+      <li class="k-cert yr" data-y="2026"><time>2026.02</time>TOEIC 850</li>
+      <li class="k-win"><time>2026.03 – 2026.08</time><span lang="ko">RAG-DIAG · 캡스톤 경진대회 장려상 (3등)</span><span lang="en">RAG-DIAG · capstone competition, 3rd prize</span></li>
+      <li class="k-win"><time>2026.08</time><span lang="ko">캐나다 UBC 블록체인 연수 · 해커톤 3등</span><span lang="en">UBC Blockchain Summer Institute, Canada · hackathon 3rd place</span></li>
+      <li class="k-cert"><time>2026.08</time><span lang="ko">정보보안기사</span><span lang="en">Engineer Information Security</span></li>
+      <li class="k-win"><time>2026.08</time><span lang="ko">특허 출원 · RAG 정보 유출 취약점 진단</span><span lang="en">Patent filed · RAG leakage diagnosis</span></li>
+      <li class="k-now"><time>2026.09 – <span lang="ko">현재</span><span lang="en">now</span></time><span lang="ko">SK쉴더스 루키즈 35기 클라우드 기반 스마트 융합보안 과정</span><span lang="en">SK shieldus Rookies 35, cloud-based converged security course</span></li>
+      <li class="k-cert"><time>2026.09</time>OPIc IH</li>
+      <li class="k-proj"><time>2026.09 – 2026.10</time><span lang="ko">보이스피싱 레이더</span><span lang="en">Voice-phishing Radar</span></li>
+      <li class="k-proj"><time>2026.10</time><span lang="ko">교육용 쇼핑몰 웹 모의침투</span><span lang="en">Web penetration test of a training shop</span></li>
+      <li class="k-now yr" data-y="2027"><time>2027.02</time><span lang="ko">세종대학교 졸업 예정</span><span lang="en">Graduating from Sejong University</span></li>
     </ol>
-  </div>
-</section>
 
-<!-- contact -->
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="contact-card reveal">
-      <p class="eyebrow">Contact</p>
-      <h2>
-        <span lang="ko">개인정보와 보안 위험을 수치로 설명하는 일,<br class="d"> 함께하고 싶습니다.</span>
-        <span lang="en">I'd like to explain privacy and security risk with evidence and numbers, together with your team.</span>
-      </h2>
-      <div class="row">
-        <a class="btn primary" href="mailto:chanchan3314@naver.com">chanchan3314@naver.com</a>
-        <a class="btn" href="https://github.com/seungchan-song" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn" href="downloads/SeungchanSong_Portfolio_KO.pdf" data-pdf download><span lang="ko">PDF (한국어)</span><span lang="en">PDF (Korean)</span></a>
-        <a class="btn" href="downloads/SeungchanSong_Portfolio_EN.pdf" download><span lang="ko">PDF (영문 요약)</span><span lang="en">PDF (English summary)</span></a>
-      </div>
+    <div class="end">
+      <p><span lang="ko">읽어 주셔서 감사합니다.</span><span lang="en">Thank you for reading.</span></p>
+      <ul class="contact">
+        <li><a href="mailto:chanchan3314@naver.com">chanchan3314@naver.com</a></li>
+        <li><a href="tel:+821074063317">010-7406-3317</a></li>
+        <li><a href="https://github.com/seungchan-song" target="_blank" rel="noopener">github.com/seungchan-song</a></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -539,7 +406,7 @@
 
 <footer class="wrap foot">
   <span>© 2026 <span lang="ko">송승찬</span><span lang="en">Seungchan Song</span></span>
-  <span><span lang="ko">마지막 업데이트</span><span lang="en">Last updated</span> 2026.10</span>
+  <span><span lang="ko">마지막 업데이트</span><span lang="en">Last updated</span> 2026.11</span>
 </footer>
 
 </body>
