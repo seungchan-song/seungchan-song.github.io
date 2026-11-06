@@ -183,6 +183,7 @@ html[data-lang="en"] .info dd.skills em { min-width: 8.6em; }
 .patent dd { font-size: 14px; font-weight: 600; }
 .patent .pt-name dd { font-size: 15px; font-weight: 700; }
 .stats.two { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+.stats.one { grid-template-columns: minmax(0, 1fr); }
 
 /* report flow + table */
 .flow { display: flex; margin-bottom: 14px; }
